@@ -478,7 +478,6 @@ p {
 .header__content .header__content-container .header__content-slider {
   margin-top: 65px;
   width: 650px;
-  height: 100%;
 }
 
 .slick-dots li button::before {

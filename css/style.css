@@ -455,6 +455,7 @@ p {
   align-items: center;
   padding-top: 100px;
   color: #fff;
+  position: relative;
 }
 .header__content .header__content-container .header__content-title {
   text-transform: uppercase;
@@ -478,6 +479,8 @@ p {
 .header__content .header__content-container .header__content-slider {
   margin-top: 65px;
   width: 650px;
+  position: absolute;
+  bottom: -100px;
 }
 .header__content .header__content-container .header__content-slider .slider {
   width: 100%;
@@ -1090,7 +1093,7 @@ p {
 
   .header__content .header__content-container {
     padding-top: 50px;
-    height: 700px;
+    height: 600px;
   }
 
   .header__content .header__content-container .header__content-discription {
@@ -1149,5 +1152,10 @@ p {
 @media screen and (max-width: 460px) {
   .header__content .header__content-container .header__content-slider {
     width: 310px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .header__content .header__content-container {
+    height: 670px;
   }
 }

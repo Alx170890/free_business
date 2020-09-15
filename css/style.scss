@@ -472,6 +472,7 @@ $background-2: linear-gradient(180deg, #002414 0%, #ff4242 0%, #b11d1d 100%);
         align-items: center;
         padding-top: 100px;
         color: #fff;
+        position: relative;
         .header__content-title {
             text-transform: uppercase;        
             font: 600 35px "Gotham Pro Black", sans-serif;
@@ -493,7 +494,9 @@ $background-2: linear-gradient(180deg, #002414 0%, #ff4242 0%, #b11d1d 100%);
         }
         .header__content-slider {
             margin-top: 65px; 
-            width: 650px;                       
+            width: 650px;   
+            position: absolute;     
+            bottom: -100px;               
             .slider {                 
                 width: 100%                  
             }                   
@@ -1054,13 +1057,13 @@ $background-2: linear-gradient(180deg, #002414 0%, #ff4242 0%, #b11d1d 100%);
     .how-it-works,
     .clients {        
         padding: 50px 0;
-    }
+    }    
     .header__menu {
         display: none;
     }
     .header__content .header__content-container {       
         padding-top: 50px;
-        height: 700px; 
+        height: 600px; 
     }
     .header__content .header__content-container .header__content-discription {
         width: 100%;
@@ -1105,8 +1108,14 @@ $background-2: linear-gradient(180deg, #002414 0%, #ff4242 0%, #b11d1d 100%);
     }    
 }
 
-@media screen and ( max-width: 460px) {
+@media screen and ( max-width: 460px) {    
     .header__content .header__content-container .header__content-slider {        
         width: 310px;
     }
+}
+
+@media screen and ( max-width: 400px) {
+    .header__content .header__content-container {         
+        height: 670px; 
+    }    
 }
